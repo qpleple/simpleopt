@@ -11,19 +11,23 @@ Licensed under the MIT License.
 
 Best described with an example. The following function:
 
-	def example(input_file, output_file, passes=3, debug=False, quiet=True):
-		'''Do some cool stuff and write the results to a new file.
+```python
+def example(input_file, output_file, passes=3, debug=False, quiet=True):
+	'''Do some cool stuff and write the results to a new file.
 
-		passes -- the number of passes to make on input_file
-		debug -- Print extra debug information to the console
-		quiet -- Print as little information as possible
-		'''
-		pass
+	passes -- the number of passes to make on input_file
+	debug -- Print extra debug information to the console
+	quiet -- Print as little information as possible
+	'''
+	pass
+```
 
 wrapped like this:
 
-	import simpleopt
-	simpleopt.parse_args(example)
+```python
+import simpleopt
+simpleopt.parse_args(example)
+```
 	
 allows you to parse the command line options just like you'd expect:
 
